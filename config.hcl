@@ -15,4 +15,4 @@ secrets "kv" {
 audit "file" {
   file_path = "/vault/log/vault_audit.log"
   format    = "json"
-} 
+}
