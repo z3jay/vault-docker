@@ -8,8 +8,6 @@ services:
       - vault-file:/vault/file
     environment:
       VAULT_ADDR: ${VAULT_ADDR:-http://127.0.0.1:8200}
-    ports:
-      - "8200:8200"
     cap_add:
       - IPC_LOCK
     command: server -config=/vault/config/config.hcl
